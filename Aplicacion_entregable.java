@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Aplicacion_entregable {
 	public static void main(String[] args) {
 		
@@ -10,9 +12,18 @@ public class Aplicacion_entregable {
 		System.out.println("                 | |                                     ");
 		System.out.println("                 |_|                                     ");
 		System.out.println("");
-		System.out.println(">>>>Z>o>d>i>a>c>o>>>>");
-		System.out.println(">>>>D>i>a>s> >v>i>v>i>d>o>s>>>>");
-		System.out.println(">>>>A>n>o>s> >p>e>r>r>o>>>>");
-		System.out.println(">>>>N>u>m>e>r>o>l>o>g>i>a>>>>");
+		System.out.println(">>>>Z>o>d>i>a>c>o>>>> <1>");
+		System.out.println(">>>>D>i>a>s> >v>i>v>i>d>o>s>>>> <2>");
+		System.out.println(">>>>A>n>o>s> >p>e>r>r>o>>>> <3>");
+		System.out.println(">>>>N>u>m>e>r>o>l>o>g>i>a>>>> <4>");
+
+		Scanner selector = new Scanner(System.in);
+		String dato = "";
+
+		while(!dato.equals("1") && !dato.equals("2") && !dato.equals("3") && !dato.equals("4"))
+		{
+			System.out.print("Que quieres hacer, elige entre 1 y 4: ");
+		    dato = selector.next();
+		}
 	}
 }
