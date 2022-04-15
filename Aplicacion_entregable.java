@@ -24,6 +24,13 @@ public class Aplicacion_entregable {
 		{
 			System.out.print("Que quieres hacer, elige entre 1 y 4: ");
 		    dato = selector.next();
+
+		    switch(dato){
+		    	case "1": System.out.println("Has elegido zodiaco"); break;
+		    	case "2": System.out.println("Has elegido tus dias vividos"); break;
+		    	case "3": System.out.println("Has elegido tus anos en perro"); break;
+		    	case "4": System.out.println("Has elegido la numerologia"); break;
+		    }
 		}
 	}
 }
