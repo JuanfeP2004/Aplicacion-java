@@ -26,11 +26,32 @@ public class Aplicacion_entregable {
 		    dato = selector.next();
 
 		    switch(dato){
-		    	case "1": System.out.println("Has elegido zodiaco"); break;
-		    	case "2": System.out.println("Has elegido tus dias vividos"); break;
-		    	case "3": System.out.println("Has elegido tus anos en perro"); break;
-		    	case "4": System.out.println("Has elegido la numerologia"); break;
+		    	case "1":  
+                    Zodiaco();
+		    		break;
+		    	case "2": 
+		    		Dias_vividos();
+		    		break;
+		    	case "3":  
+		    		Anos_perro();
+		    		break;
+		    	case "4":  
+		    		Numerologia();
+		    		break;
 		    }
 		}
 	}
+
+	static void Zodiaco(){
+		System.out.println("Has elegido zodiaco");
+		}
+	static void Dias_vividos(){
+		System.out.println("Has elegido tus dias vividos");
+		}
+	static void Anos_perro(){
+		System.out.println("Has elegido tus anos en perro");	
+		}
+	static void Numerologia(){
+		System.out.println("Has elegido la numerologia");	
+		}
 }
