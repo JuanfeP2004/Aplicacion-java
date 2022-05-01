@@ -112,7 +112,79 @@ public class Aplicacion_entregable {
 		
     }
 	static void Dias_vividos(){
+
+		int diaN = 0;
+		int mesN = 0;
+		int uyear = 0;
+        int diasV = 0;
+
 		System.out.println("Has elegido tus dias vividos");
+
+		Scanner mes = new Scanner(System.in);
+		Scanner dia = new Scanner(System.in);
+		Scanner year = new Scanner(System.in);
+
+		System.out.println("Elige tu mes de nacimiento");
+		mesN = mes.nextInt();
+		System.out.println("Elige tu dia de nacimiento");
+		diaN = dia.nextInt();
+		System.out.println("Escribe tu edad:");
+		uyear = year.nextInt();
+			
+		if (diaN > 31 && (mesN == 1 || mesN == 3 || mesN == 5 || mesN == 7 || mesN == 8 || mesN == 10 || mesN == 12)) {
+			diaN = 31;
+		}
+		else if (diaN > 30 && (mesN == 4 || mesN == 6 || mesN == 9 || mesN == 11)) {
+			diaN = 30;
+		}
+		else if (diaN > 28 && mesN == 2) {
+			diaN = 28;
+		}
+		
+		dia.close();
+		mes.close();
+		year.close();
+
+		diasV = (uyear - 1) * 365;
+
+		if(mesN > 1){
+			diasV = diasV + 31;
+		}
+		if(mesN > 2){
+			diasV = diasV + 28;
+		}
+		if(mesN > 3){
+			diasV = diasV + 31;
+		}
+		if(mesN > 4){
+			diasV = diasV + 30;
+		}
+		if(mesN > 5){
+			diasV = diasV + 31;
+		}
+		if(mesN > 6){
+			diasV = diasV + 30;
+		}
+		if(mesN > 7){
+			diasV = diasV + 31;
+		}
+		if(mesN > 8){
+			diasV = diasV + 31;
+		}
+		if(mesN > 9){
+			diasV = diasV + 30;
+		}
+		if(mesN > 10){
+			diasV = diasV + 31;
+		}
+		if(mesN > 11){
+			diasV = diasV + 30;
+		}
+		
+		diasV = diasV + diaN;
+
+        System.out.println("has vivido unos " + diasV + " dias");
+
 		}
 	static void Anos_perro(){
 
