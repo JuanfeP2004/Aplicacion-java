@@ -69,12 +69,48 @@ public class Aplicacion_entregable {
 		else if (diaN > 28 && mesN == 2) {
 			diaN = 28;
 		}
-		System.out.println(diaN);
-		System.out.println(mesN);
-
+		
 		dia.close();
 		mes.close();
+
+		if ((mesN == 1 && diaN >= 21) || (mesN == 2 && diaN <= 19)){
+			System.out.println("Tu zodiaco es aquario");
 		}
+		if ((mesN == 2 && diaN >= 20) || (mesN == 3 && diaN <= 20)){
+			System.out.println("Tu zodiaco es piscis");
+		}
+		if ((mesN == 3 && diaN >= 21) || (mesN == 4 && diaN <= 20)){
+			System.out.println("Tu zodiaco es aries");
+		}
+		if ((mesN == 4 && diaN >= 21) || (mesN == 5 && diaN <= 21)){
+			System.out.println("Tu zodiaco es tauro");
+		}
+		if ((mesN == 5 && diaN >= 22) || (mesN == 6 && diaN <= 21)){
+			System.out.println("Tu zodiaco es geminis");
+		}
+		if ((mesN == 6 && diaN >= 22) || (mesN == 7 && diaN <= 22)){
+			System.out.println("Tu zodiaco es cancer");
+		}
+		if ((mesN == 7 && diaN >= 23) || (mesN == 8 && diaN <= 23)){
+			System.out.println("Tu zodiaco es leo");
+		}
+		if ((mesN == 8 && diaN >= 24) || (mesN == 9 && diaN <= 23)){
+			System.out.println("Tu zodiaco es virgo");
+		}
+		if ((mesN == 9 && diaN >= 24) || (mesN == 10 && diaN <= 23)){
+			System.out.println("Tu zodiaco es libra");
+		}
+		if ((mesN == 10 && diaN >= 24) || (mesN == 11 && diaN <= 22)){
+			System.out.println("Tu zodiaco es escorpio");
+		}
+		if ((mesN == 11 && diaN >= 23) || (mesN == 12 && diaN <= 21)){
+			System.out.println("Tu zodiaco es sagitario");
+		}
+		if ((mesN == 12 && diaN >= 22) || (mesN == 1 && diaN <= 20)){
+			System.out.println("Tu zodiaco es capricornio");
+		}
+		
+    }
 	static void Dias_vividos(){
 		System.out.println("Has elegido tus dias vividos");
 		}
@@ -94,5 +130,6 @@ public class Aplicacion_entregable {
 	static void Numerologia(){
 		System.out.println("Has elegido la numerologia");	
 		}
+	
 	
 }
