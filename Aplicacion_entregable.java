@@ -128,7 +128,7 @@ public class Aplicacion_entregable {
 		mesN = mes.nextInt();
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
-		System.out.println("Escribe tu edad:");
+		System.out.println("Escribe tu edad");
 		uyear = year.nextInt();
 			
 		if (diaN > 31 && (mesN == 1 || mesN == 3 || mesN == 5 || mesN == 7 || mesN == 8 || mesN == 10 || mesN == 12)) {
@@ -200,7 +200,36 @@ public class Aplicacion_entregable {
 		year.close();
 		}
 	static void Numerologia(){
-		System.out.println("Has elegido la numerologia");	
+		System.out.println("Has elegido la numerologia");
+
+		int diaN = 0;
+
+		Scanner dia = new Scanner(System.in);
+
+		System.out.println("Elige tu dia de nacimiento");
+		diaN = dia.nextInt();
+
+		dia.close();
+
+		String diaNstring = Integer.toString(diaN);
+		char Num1a = diaNstring.charAt(0);
+		char Num2a = diaNstring.charAt(1);
+		int Num1b = Character.getNumericValue(Num1a);
+		int Num2b = Character.getNumericValue(Num2a);
+		int Numerologia1 = Num1b + Num2b;
+
+		if(Numerologia1 > 9){
+		String diaNstring2 = Integer.toString(Numerologia1);
+		char Num3a = diaNstring.charAt(0);
+		char Num4a = diaNstring.charAt(1);
+		int Num3b = Character.getNumericValue(Num3a);
+		int Num4b = Character.getNumericValue(Num4a);
+		int Numerologia2 = Num3b + Num4b;
+		System.out.println("Tu numerologia es " + Numerologia2);
+		}
+		else {
+		System.out.println("Tu numerologia es " + Numerologia1);
+		}
 		}
 	
 	
