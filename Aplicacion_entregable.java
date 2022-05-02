@@ -57,6 +57,13 @@ public class Aplicacion_entregable {
 		
 		System.out.println("Elige tu mes de nacimiento");
 		mesN = mes.nextInt();
+
+		if (mesN > 12){
+			mesN = 12;
+		}
+		else if (mesN < 1) {
+			mesN = 1;
+		}
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
 			
@@ -126,10 +133,15 @@ public class Aplicacion_entregable {
 
 		System.out.println("Elige tu mes de nacimiento");
 		mesN = mes.nextInt();
+
+		if (mesN > 12){
+			mesN = 12;
+		}
+		else if (mesN < 1) {
+			mesN = 1;
+		}
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
-		System.out.println("Escribe tu edad");
-		uyear = year.nextInt();
 			
 		if (diaN > 31 && (mesN == 1 || mesN == 3 || mesN == 5 || mesN == 7 || mesN == 8 || mesN == 10 || mesN == 12)) {
 			diaN = 31;
@@ -139,6 +151,13 @@ public class Aplicacion_entregable {
 		}
 		else if (diaN > 28 && mesN == 2) {
 			diaN = 28;
+		}
+
+		System.out.println("Escribe tu edad");
+		uyear = year.nextInt();
+
+		if (uyear < 0){
+			uyear = 0;
 		}
 		
 		dia.close();
@@ -190,11 +209,15 @@ public class Aplicacion_entregable {
 
 		Scanner year = new Scanner(System.in);
 		System.out.println("Has elegido tus anos en perro");	
-		int uyear = 0;
+		float uyear = 0.0f;
 		System.out.println("Escribe tu edad:");
 		uyear = year.nextInt();
 		
-		float edad = uyear / 7;
+		if (uyear < 0.0f){
+			uyear = 0.0f;
+		}
+
+		float edad = uyear / 7.0f;
 		System.out.println("tu edad de perro es " + edad);
 
 		year.close();
@@ -209,6 +232,13 @@ public class Aplicacion_entregable {
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
 
+		if (diaN > 31){
+			diaN = 31;
+		}
+		if (diaN < 1){
+			diaN = 1;
+		}
+
 		dia.close();
 
 		String diaNstring = Integer.toString(diaN);
@@ -220,8 +250,8 @@ public class Aplicacion_entregable {
 
 		if(Numerologia1 > 9){
 		String diaNstring2 = Integer.toString(Numerologia1);
-		char Num3a = diaNstring.charAt(0);
-		char Num4a = diaNstring.charAt(1);
+		char Num3a = diaNstring2.charAt(0);
+		char Num4a = diaNstring2.charAt(1);
 		int Num3b = Character.getNumericValue(Num3a);
 		int Num4b = Character.getNumericValue(Num4a);
 		int Numerologia2 = Num3b + Num4b;
