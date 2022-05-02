@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Aplicacion_entregable {
 	public static void main(String[] args) {
 		
-		String dato = "";
-		
+		try{
+			String dato = "";
 
 		System.out.println(" __  __ _               _ _                _             ");
 		System.out.println("|  \\/  (_)             | (_)              (_)            ");
@@ -45,6 +45,16 @@ public class Aplicacion_entregable {
 		selector.close();
 		
 	}
+	catch(Exception e){
+			System.out.println("Ha ocurrido un error");
+		}
+		finally{
+			System.out.println("Gracias por usar");
+		}
+		}
+
+
+		
 
 	static void Zodiaco(){
 		int mesN = 0;
