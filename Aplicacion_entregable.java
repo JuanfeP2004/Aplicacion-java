@@ -70,21 +70,30 @@ public class Aplicacion_entregable {
 
 		if (mesN > 12){
 			mesN = 12;
+			System.out.println("Ese numero no es valido asi que tu mes se ha establecido en " + mesN);
 		}
 		else if (mesN < 1) {
 			mesN = 1;
+			System.out.println("Ese numero no es valido asi que tu mes se ha establecido en " + mesN);
 		}
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
 			
 		if (diaN > 31 && (mesN == 1 || mesN == 3 || mesN == 5 || mesN == 7 || mesN == 8 || mesN == 10 || mesN == 12)) {
 			diaN = 31;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		else if (diaN > 30 && (mesN == 4 || mesN == 6 || mesN == 9 || mesN == 11)) {
 			diaN = 30;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		else if (diaN > 28 && mesN == 2) {
 			diaN = 28;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
+		}
+		if (diaN < 1){
+			diaN = 1;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		
 		dia.close();
@@ -146,21 +155,30 @@ public class Aplicacion_entregable {
 
 		if (mesN > 12){
 			mesN = 12;
+			System.out.println("Ese numero no es valido asi que tu mes se ha establecido en " + mesN);
 		}
 		else if (mesN < 1) {
 			mesN = 1;
+			System.out.println("Ese numero no es valido asi que tu mes se ha establecido en " + mesN);
 		}
 		System.out.println("Elige tu dia de nacimiento");
 		diaN = dia.nextInt();
 			
 		if (diaN > 31 && (mesN == 1 || mesN == 3 || mesN == 5 || mesN == 7 || mesN == 8 || mesN == 10 || mesN == 12)) {
 			diaN = 31;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		else if (diaN > 30 && (mesN == 4 || mesN == 6 || mesN == 9 || mesN == 11)) {
 			diaN = 30;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		else if (diaN > 28 && mesN == 2) {
 			diaN = 28;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
+		}
+		if (diaN < 1){
+			diaN = 1;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 
 		System.out.println("Escribe tu edad");
@@ -168,6 +186,7 @@ public class Aplicacion_entregable {
 
 		if (uyear < 0){
 			uyear = 0;
+			System.out.println("Ese numero no es valido asi que tu edad se ha establecido en " + uyear);
 		}
 		
 		dia.close();
@@ -225,9 +244,10 @@ public class Aplicacion_entregable {
 		
 		if (uyear < 0.0f){
 			uyear = 0.0f;
+			System.out.println("Ese numero no es valido asi que tu edad se ha establecido en " + uyear);
 		}
 
-		float edad = uyear / 7.0f;
+		float edad = uyear * 15.0f / 100.0f;
 		System.out.println("tu edad de perro es " + edad);
 
 		year.close();
@@ -244,9 +264,11 @@ public class Aplicacion_entregable {
 
 		if (diaN > 31){
 			diaN = 31;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 		if (diaN < 1){
 			diaN = 1;
+			System.out.println("Ese numero no es valido asi que tu dia se ha establecido en " + diaN);
 		}
 
 		dia.close();
